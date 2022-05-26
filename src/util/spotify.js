@@ -1,11 +1,10 @@
-const clientId = "c2ccbc01f7564ca9938ed1534b427813";
+const clientId = "CLIENTID" // In localhost, this variable has my actual clientID
 const redirectUri = "http://localhost:3000/";
 let accessToken;
 
 const Spotify = {
   getAccessToken() {
     if (accessToken) {
-      console.log('ya estaba: ' + accessToken)
       return accessToken;
     }
     //revisar si el token está en la url (implicit grant flow )
